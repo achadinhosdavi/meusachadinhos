@@ -1,73 +1,85 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Achadinhos do Davi</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #fafafa;
-      color: #333;
-    }
-    h1, h2 {
-      color: #d63384;
-    }
-    .categoria {
-      margin-bottom: 40px;
-    }
-    .produto {
-      background: #fff;
-      border: 1px solid #ddd;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 8px;
-    }
-    .produto a {
-      color: #0d6efd;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .produto a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <h1>Achadinhos do Davi</h1>
+body {
+  font-family: sans-serif;
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
 
-  <div class="categoria">
-    <h2>👗 Moda Feminina</h2>
-    <div class="produto">
-      <p>Vestido floral em promoção</p>
-      <a href="https://seulink.com/vestido" target="_blank">Ver produto</a>
-    </div>
-  </div>
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
 
-  <div class="categoria">
-    <h2>👶 Bebê e Maternidade</h2>
-    <div class="produto">
-      <p>Kit mamadeira com desconto</p>
-      <a href="https://seulink.com/mamadeira" target="_blank">Ver produto</a>
-    </div>
-  </div>
+h1, h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
-  <div class="categoria">
-    <h2>🏠 Casa e Decoração</h2>
-    <div class="produto">
-      <p>Tapete felpudo lindo</p>
-      <a href="https://seulink.com/tapete" target="_blank">Ver produto</a>
-    </div>
-  </div>
+/* Seção hero */
+.hero {
+  background: #f9f5f0;
+  padding: 4rem 0;
+}
+.hero-image img {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
 
-  <div class="categoria">
-    <h2>💻 Tecnologia</h2>
-    <div class="produto">
-      <p>Fone Bluetooth de qualidade</p>
-      <a href="https://seulink.com/fone" target="_blank">Ver produto</a>
-    </div>
-  </div>
+/* Produtos em destaque */
+.highlighted .grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.produto img {
+  width: 100%;
+  border-radius: 4px;
+}
+.produto h3 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.1rem;
+}
+.produto .preco {
+  font-weight: bold;
+}
 
-</body>
-</html>
+/* Categorias */
+.categorias .grid-categorias {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.categoria img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 4px;
+}
+.categoria span {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* Rodapé */
+.rodape {
+  background: #f9f5f0;
+  padding: 1.5rem 0;
+  margin-top: 4rem;
+}
+.rodape .container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rodape nav a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
