@@ -1,85 +1,82 @@
-body {
-  font-family: sans-serif;
-  color: #111;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow&Care</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      color: #111;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
+    /* Hero */
+    .hero {
+      background: #f9f5f0;
+      padding: 4rem 0;
+    }
+    .hero-image img {
+      display: block;
+      max-width: 400px;
+      width: 100%;
+      margin: 0 auto;
+    }
 
-h1, h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
+    /* Produtos */
+    .highlighted .grid-produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .produto img {
+      width: 100%;
+      border-radius: 4px;
+    }
+    .produto h3 {
+      margin: 0.5rem 0 0.25rem;
+      font-size: 1.1rem;
+    }
+    .produto .preco {
+      font-weight: bold;
+    }
 
-/* Seção hero */
-.hero {
-  background: #f9f5f0;
-  padding: 4rem 0;
-}
-.hero-image img {
-  display: block;
-  max-width: 400px;
-  width: 100%;
-  margin: 0 auto;
-}
+    /* Categorias */
+    .categorias .grid-categorias {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .categoria img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 4px;
+    }
+    .categoria span {
+      display: block;
+      text-align: center;
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
 
-/* Produtos em destaque */
-.highlighted .grid-produtos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-.produto img {
-  width: 100%;
-  border-radius: 4px;
-}
-.produto h3 {
-  margin: 0.5rem 0 0.25rem;
-  font-size: 1.1rem;
-}
-.produto .preco {
-  font-weight: bold;
-}
-
-/* Categorias */
-.categorias .grid-categorias {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-.categoria img {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 4px;
-}
-.categoria span {
-  display: block;
-  text-align: center;
-  margin-top: 0.5rem;
-  font-weight: bold;
-}
-
-/* Rodapé */
-.rodape {
-  background: #f9f5f0;
-  padding: 1.5rem 0;
-  margin-top: 4rem;
-}
-.rodape .container-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.rodape nav a {
-  margin: 0 0.5rem;
-  text-decoration: none;
-  color: inherit;
-}
+    /* Rodapé */
+    .rodape {
+      background: #f9f5f0;
+      padding: 1.5rem 0;
+      margin-top: 4rem;
+    }
+    .rodape .container-footer {
+      displ
