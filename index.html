@@ -1,82 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Glow&Care</title>
   <style>
     body {
-      font-family: sans-serif;
-      color: #111;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
     }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-    h1, h2 {
+    header {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      padding: 20px;
       text-align: center;
-      margin-bottom: 1rem;
+      font-weight: bold;
+      font-size: 24px;
+      text-transform: uppercase;
     }
-
-    /* Hero */
-    .hero {
-      background: #f9f5f0;
-      padding: 4rem 0;
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      background: #fafafa;
+      border-bottom: 1px solid #eee;
     }
-    .hero-image img {
-      display: block;
-      max-width: 400px;
-      width: 100%;
-      margin: 0 auto;
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
     }
-
-    /* Produtos */
-    .highlighted .grid-produtos {
+    .banner {
+      text-align: center;
+      padding: 40px 20px;
+      background: #f9f4f2;
+    }
+    .banner h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .banner p {
+      font-size: 18px;
+      color: #777;
+    }
+    .produtos, .categorias {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .produtos h2, .categorias h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 26px;
+    }
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
+      gap: 20px;
     }
-    .produto img {
-      width: 100%;
-      border-radius: 4px;
+    .produto, .categoria {
+      background: #fff;
+      border: 1px solid #eee;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    .produto img, .categoria img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
     }
     .produto h3 {
-      margin: 0.5rem 0 0.25rem;
-      font-size: 1.1rem;
+      margin: 10px 0 5px;
+      font-size: 18px;
     }
-    .produto .preco {
-      font-weight: bold;
+    .produto p {
+      color: #777;
     }
-
-    /* Categorias */
-    .categorias .grid-categorias {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .categoria img {
-      width: 100%;
-      max-width: 200px;
-      border-radius: 4px;
-    }
-    .categoria span {
-      display: block;
+    footer {
       text-align: center;
-      margin-top: 0.5rem;
-      font-weight: bold;
+      padding: 20px;
+      background: #fafafa;
+      border-top: 1px solid #eee;
+      font-size: 14px;
+      color: #777;
     }
+  </style>
+</head>
+<body>
+  <header>Glow&Care</header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Produtos</a>
+    <a href="#">Promoções</a>
+    <a href="#">Sobre Nós</a>
+    <a href="#">Contato</a>
+  </nav>
 
-    /* Rodapé */
-    .rodape {
-      background: #f9f5f0;
-      padding: 1.5rem 0;
-      margin-top: 4rem;
-    }
-    .rodape .container-footer {
-      displ
+  <section class="banner">
+    <h1>Cuide do seu cabelo</h1>
+    <p>com os melhores produtos</p>
+  </section>
+
+  <section class="produtos">
+    <h2>Produtos em Destaque</h2>
+    <div class="grid">
+      <div class="produto">
+        <img src="https://via.placeholder.com/150x150?text=Shampoo" alt="Shampoo Hidratante" />
+        <h3>Shampoo Hidratante</h3>
+        <p>R$ 45,00</p>
+      </div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/150x150?text=Hidratante" alt="Hidratante Corporal" />
+        <h3>Hidratante Corporal</h3>
+        <p>R$ 55,00</p>
+      </div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/150x150?text=Renner" alt="Produto Renner" />
+        <h3>Produto Renner</h3>
+        <p>R$ 90,00</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="categorias">
+    <h2>Conheça Nossas Categorias</h2>
+    <div class="grid">
+      <div class="categoria">
+        <img src="https://via.placeholder.com/150x150?text=Cabelo" alt="Cabelo" />
+        <h3>Cabelo</h3>
+      </div>
+      <div class="categoria">
+        <img src="https://via.placeholder.com/150x150?text=Pele" alt="Pele" />
+        <h3>Pele</h3>
+      </div>
+      <div class="categoria">
+        <img src="https://via.placeholder.com/150x150?text=Renner" alt="Renner" />
+        <h3>Renner</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Glow&Care. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
