@@ -1,10 +1,16 @@
 body {
-  background-color: #fffbe7;
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #fefcf9;
   color: #333;
   padding: 20px;
+  margin: 0;
 }
 
-h1 {
-  color: #d78b52;
+h1, h2, h3 {
+  color: #3c2e2a;
+}
+
+a {
+  text-decoration: none;
+  color: #d7825e;
 }
